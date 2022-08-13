@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/91c66aeb1e.js" crossorigin="anonymous"></script>
+    <link href = "https://jaareet.es/utils/fv6/css/all.css" rel = "stylesheet"></link>
+    <title>MYM</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="logowave" src="https://cdn.discordapp.com/attachments/965582704261365842/1007426057852420136/Sin_titulo-1_1.png">
+        <h1 class="titulo">MYM, más que una comunidad</h1>
+    </div>
+
+    <div class="botones">
+        <div class="boton" id="twitter">
+        <i class="fas fa-display-code"></i>
+        </div>
+
+        <div class="boton" id="instagram">
+            <i class="fab fa-instagram"></i>
+        </div>
+
+        <div class="boton" id="foro">
+            <i class="fas fa-globe-europe"></i>
+        </div>
+
+        <div class="boton" id="discord">
+            <i class="fab fa-discord"></i>
+        </div>
+
+        <div class="boton" id="paypal">
+            <i class="fab fa-paypal"></i>
+        </div>
+    </div>
+
+    <div class="copy">
+        <a>© 2022 - 2023 MYM</a>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var urls = ['backgrounds/background1.png', 'backgrounds/background2.png', 'backgrounds/background3.png', 'backgrounds/background4.png', 'backgrounds/background5.png', 'backgrounds/background6.png', 'backgrounds/background7.png'];
+
+            var cout = 1;
+            $('body').css('background-image', 'url("' + urls[0] + '")');
+            setInterval(function() {
+                $('body').css('background-image', 'url("' + urls[cout] + '")');
+                cout == urls.length - 1 ? cout = 0 : cout++;
+            }, 5000);
+
+            $("#discord").on("click", function() {
+                window.open('https://discord.gg/menyoomodslilstore', '_blank');
+            });
+
+            $("#paypal").on("click", function() {
+                window.open('https://www.paypal.com/paypalme/LilNunn', '_blank');
+            });
+
+            $("#instagram").on("click", function() {
+                window.open('https://www.instagram.com/mymlilnunn/', '_blank');
+            });
+
+            $("#foro").on("click", function() {
+                window.open('https://www.patreon.com/LilsStore', '_blank');
+            });
+
+            $("#twitter").on("click", function() {
+                window.open('https://discord.gg/C7sv8bV2tZ', '_blank');
+            });
+        });
+    </script>
+</body>
+
+</html>

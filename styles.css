@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: 1s;
+    background-image: url('https://images2.alphacoders.com/587/thumb-1920-587532.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.main {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 50%;
+}
+
+.logowave {
+    width: 100%;
+}
+
+.titulo {
+    position: absolute;
+    text-align: center;
+    color: rgb(246, 236, 236);
+    width: 100%;
+    font-size: 1vw;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: -47%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 120vw;
+        height: 120vw;
+    }
+    ,
+    .titulo {
+        font-size: 5vw;
+    }
+    ,
+    .botones {
+        width: 80vw;
+        height: 20vw;
+    }
+    ,
+    .copy {
+        width: 25vw;
+        height: 10vw;
+        line-height: 2vw;
+        font-size: 4vw;
+    }
+}
+
+.botones {
+    position: absolute;
+    background-color: rgba(0, 174, 255, 0.158);
+    border-radius: 0.6vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 21vw;
+    height: 6.5vw;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 0;
+}
+
+.boton {
+    position: relative;
+    background-color: #c300ff;
+    border-radius: 0.6vw;
+    margin-left: 1vw;
+    width: 3vw;
+    height: 3vw;
+    bottom: -20%;
+    left:7%;
+    transform: translate(-50%, 50%);
+    transition: background-color 200ms linear;
+}
+
+.boton:hover {
+    transition: background-color 200ms linear;
+    background-color: #7700ff9c;
+}
+
+i {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 50%);
+    font-size: 1.3vw;
+    color: white;
+}
+
+.copy {
+    position: absolute;
+    background-color: rgba(0, 174, 255, 0.295);
+    border-radius: 0.6vw;
+    color: white;
+    width: 9vw;
+    height: 1vw;
+    text-align: center;
+    line-height: 1vw;
+    font-size: 0.8vw;
+    transform: translate(-50%, 50%);
+    left: 5%;
+    bottom: 2%;
+}
